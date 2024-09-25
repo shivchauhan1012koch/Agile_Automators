@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="C:/Users/shivpc/IdeaProjects/Tech_Fiesta">
+        <classes>
+            <class name="CreateProject.CreateProject">
+                <methods>
+                    <include name="signIn"/>
+                    <include name="CreationOfProject"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
