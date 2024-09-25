@@ -58,6 +58,9 @@
 
 
     </dependencies>
+
+
+
     <build>
         <!-- To define the plugin version in your parent POM -->
         <pluginManagement>
@@ -76,6 +79,8 @@
                 <artifactId>maven-surefire-plugin</artifactId>
             </plugin>
         </plugins>
+
+
     </build>
     <properties>
         <maven.compiler.source>17</maven.compiler.source>

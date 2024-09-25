@@ -14,7 +14,6 @@ public class CreateProject extends Setup {
     String PW= "Ulreztknaf5283)";
     String RPMno= "2424211";
     String Project_Name= "Aut4";
-
     @Test(priority = 1)
     public void signIn(){
         login LI= new login();
