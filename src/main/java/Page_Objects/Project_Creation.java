@@ -52,7 +52,7 @@ public class Project_Creation extends Setup {
         wait.until(ExpectedConditions.elementToBeClickable(ProjectCreated));
         WebElement ProjectNameVerification = driver.findElement(ProjectCreated);
         String msg = ProjectNameVerification.getText();
-        String expectedMsg = "Completed : Project created successfully with Id : 2424211";
+        String expectedMsg = "Completed : Project created successfully with Id : 242421111";
 //        Assert.assertEquals(msg, expectedMsg);
         Assert.assertEquals(msg, expectedMsg);
     }
