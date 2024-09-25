@@ -12,8 +12,8 @@ public class CreateProject extends Setup {
     // We have to change the RPM no. every time in Project_Creation class aslo.
     String UN= "Pol_aut_test_1@molex.com";
     String PW= "Ulreztknaf5283)";
-    String RPMno= "24242111";
-    String Project_Name= "Aut5";
+    String RPMno= "242421111";
+    String Project_Name= "Aut6";
     @Test(priority = 1)
     public void signIn(){
         login LI= new login();
