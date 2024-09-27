@@ -14,9 +14,11 @@ public class login extends Setup {
     By RememberUN= By.xpath("(//*[@class='checkmark'])");
     By Sign_on_Button= By.xpath("(//*[@id='submitButton'])");
     By UN_Block = By.xpath("(//*[@id='username'])");
+    By ContinueBtn = By.xpath("//*[@id='btnContinue']");
     By PW_Block = By.xpath("(//*[@id='password'])");
     By remember_Signon = By.xpath("(//*[@id='rememberUsername'])");
     By SignInbtn = By.xpath("(//*[@title='Sign On'])");
+    By SignOnbtn= By.xpath("//*[@id='btnContinue']");
     By Repository_btn = By.xpath("(//*[@title='Go to Default Repository'])");
     By Home_Button = By.xpath("(//*[@title='Home'])[2]");
 
@@ -34,15 +36,15 @@ public class login extends Setup {
         wait.until(ExpectedConditions.elementToBeClickable(UN_Block));
 //        Utilities.jsClick(driver,UN_Block);
         Utilities.sendText(driver,UN_Block,UN);
-
+        Utilities.click(driver,ContinueBtn);
         wait.until(ExpectedConditions.elementToBeClickable(PW_Block));
         Utilities.sendText(driver,PW_Block,PW);
     }
-    public void ClickRemember(){
-        Utilities.jsClick(driver,remember_Signon);
-    }
+//    public void ClickRemember(){
+//        Utilities.jsClick(driver,remember_Signon);
+//    }
     public void ClickSignOn(){
-        Utilities.jsClick(driver,SignInbtn);
+        Utilities.click(driver,SignOnbtn);
     }
     public void ClickDiamondButton(){
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
