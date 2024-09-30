@@ -9,11 +9,11 @@ import org.testng.annotations.Test;
 
 public class CreateProject extends Setup {
     //    static Logger logger = LogManager.getLogger(CreateProject.class);
-    // We have to change the RPM no. every time in Project_Creation class aslo.
+    // We have to change the RPM no. every time in Project_Creation class.
     String UN= "Pol_aut_test_1@molex.com";
     String PW= "Ulreztknaf5283)";
-    String RPMno= "1";
-    String Project_Name= "At1";
+    String RPMno= "2";
+    String Project_Name= "At2";
     @Test(priority = 1)
     public void signIn(){
         login LI= new login();
